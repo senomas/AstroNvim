@@ -136,16 +136,16 @@ if is_available "smart-splits.nvim" then
   end, { desc = "Move to right split" })
 
   -- Resize with arrows
-  map("n", "<C-Up>", function()
+  map("n", "<C-S-Up>", function()
     require("smart-splits").resize_up()
   end, { desc = "Resize split up" })
-  map("n", "<C-Down>", function()
+  map("n", "<C-S-Down>", function()
     require("smart-splits").resize_down()
   end, { desc = "Resize split down" })
-  map("n", "<C-Left>", function()
+  map("n", "<C-S-Left>", function()
     require("smart-splits").resize_left()
   end, { desc = "Resize split left" })
-  map("n", "<C-Right>", function()
+  map("n", "<C-S-Right>", function()
     require("smart-splits").resize_right()
   end, { desc = "Resize split right" })
 else
@@ -153,10 +153,10 @@ else
   map("n", "<C-j>", "<C-w>j", { desc = "Move to below split" })
   map("n", "<C-k>", "<C-w>k", { desc = "Move to above split" })
   map("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
-  map("n", "<C-Up>", "<cmd>resize -2<CR>", { desc = "Resize split up" })
-  map("n", "<C-Down>", "<cmd>resize +2<CR>", { desc = "Resize split down" })
-  map("n", "<C-Left>", "<cmd>vertical resize -2<CR>", { desc = "Resize split left" })
-  map("n", "<C-Right>", "<cmd>vertical resize +2<CR>", { desc = "Resize split right" })
+  map("n", "<C-S-Up>", "<cmd>resize -2<CR>", { desc = "Resize split up" })
+  map("n", "<C-S-Down>", "<cmd>resize +2<CR>", { desc = "Resize split down" })
+  map("n", "<C-S-Left>", "<cmd>vertical resize -2<CR>", { desc = "Resize split left" })
+  map("n", "<C-S-Right>", "<cmd>vertical resize +2<CR>", { desc = "Resize split right" })
 end
 
 -- SymbolsOutline
