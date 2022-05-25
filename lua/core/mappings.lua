@@ -243,9 +243,6 @@ if is_available "nvim-toggleterm.lua" then
   map("n", "<leader>tu", function()
     toggle_term_cmd "ncdu"
   end, { desc = "ToggleTerm NCDU" })
-  map("n", "<leader>tt", function()
-    toggle_term_cmd "htop"
-  end, { desc = "ToggleTerm htop" })
   map("n", "<leader>tp", function()
     toggle_term_cmd "python"
   end, { desc = "ToggleTerm python" })
@@ -253,6 +250,7 @@ if is_available "nvim-toggleterm.lua" then
     toggle_term_cmd "lazygit"
   end, { desc = "ToggleTerm lazygit" })
   map("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", { desc = "ToggleTerm float" })
+  map("n", "<leader>tt", "<cmd>ToggleTerm size=40 direction=horizontal<cr>", { desc = "ToggleTerm horizontal split" })
   map("n", "<leader>th", "<cmd>ToggleTerm size=40 direction=horizontal<cr>", { desc = "ToggleTerm horizontal split" })
   map("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<cr>", { desc = "ToggleTerm vertical split" })
 end
