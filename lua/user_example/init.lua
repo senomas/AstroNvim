@@ -200,7 +200,6 @@ local config = {
       command = "source <afile> | PackerSync",
     })
     vim.cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
-
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

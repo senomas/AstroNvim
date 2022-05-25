@@ -4,6 +4,8 @@ if not vim.tbl_contains(vim.fn.getcompletion("", "color"), colorscheme) then
   colorscheme = default
 end
 vim.api.nvim_command(("colorscheme %s"):format(colorscheme))
+vim.cmd("set foldlevel=8")
+vim.cmd("set foldmethod=indent")
 
 astronvim.vim_opts(astronvim.user_plugin_opts("options", {
   opt = {
