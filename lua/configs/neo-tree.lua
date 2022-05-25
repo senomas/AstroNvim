@@ -32,7 +32,7 @@ function M.config()
         },
       },
       window = {
-        width = 25,
+        width = 40,
         mappings = {
           ["o"] = "open",
         },

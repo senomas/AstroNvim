@@ -6,7 +6,7 @@ map("", "<Space>", "<Nop>") -- disable space because leader
 -- Normal --
 -- Standard Operations
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })
-map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
+map("n", "<leader>q", "<cmd>qall<cr>", { desc = "Quit" })
 map("n", "<leader>h", "<cmd>nohlsearch<cr>", { desc = "No Highlight" })
 map("n", "<leader>u", function()
   astronvim.toggle_url_match()
@@ -253,7 +253,7 @@ if is_available "nvim-toggleterm.lua" then
     toggle_term_cmd "lazygit"
   end, { desc = "ToggleTerm lazygit" })
   map("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", { desc = "ToggleTerm float" })
-  map("n", "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", { desc = "ToggleTerm horizontal split" })
+  map("n", "<leader>th", "<cmd>ToggleTerm size=40 direction=horizontal<cr>", { desc = "ToggleTerm horizontal split" })
   map("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<cr>", { desc = "ToggleTerm vertical split" })
 end
 
